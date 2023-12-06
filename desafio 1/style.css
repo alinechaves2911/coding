@@ -30,30 +30,17 @@ header h2{
     color:#E07B67;
 }
 .search input[type="text"]{
-    color: #fff;
-    padding-left:72px;
+    color: #AFABB6;   
+    padding-left:5px;
     width: 1216px;
     height: 64px;
     border-radius: 8px;
     background-color: #202024;
-    border: 2px solid #252529;
-    color: #fff;
-
-}
-.search ::placeholder{
-    color: #AFABB6;
+    border: none;
     
+
 }
 
-.icon{
-    position: absolute;
-    top: 180px;
-    left:376px;
-    color:#E07B67;
-    width: 32px;
-    height: 32px;
-    line-height: 30px;
-} 
 .posts{
     color: #fff;
     display: flex;
@@ -61,11 +48,43 @@ header h2{
     justify-content: center;
     align-items: center;
     margin-top: 80px;
+   
 }
-.post{
+.post-data{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    color:#E07B67;
+    font-size: 16px;
+}
+.favourite{
+    color:#E07B67;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+   
+}
+.post-container{
     Width: 1216px;
     height: 238px;
     border-radius: 8px;
     border:  2px solid #17171A;
-    padding: 46px;
+    padding: 40px;
+    margin-bottom:40px ;
 }
+.post-title{
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 24px;
+    padding-bottom:16px ;
+}
+.post-title a{
+    text-decoration: none;
+    color: #fff;
+}
+.post-text{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color:#AFABB6;
+    text-align: justify;
+}
+   
