@@ -120,3 +120,66 @@ main{
 .preco{
     font-size: 20px;
 }
+@media (min-width: 375px) and (max-width: 767px){
+    .header-topo{
+        width: 100%;
+        font-size: 14px;
+
+    }
+    .header-container{
+        width: 100%;
+       background-image: url("/assets/img/michael-jordan-cell.png");
+       background-repeat: no-repeat;
+       background-size: cover;
+       flex-direction: row;
+        color:#fff;
+       padding: 91px 24px;
+        
+    }
+    .header-logo img{
+        width: 142px;
+        height: 24px;
+    }
+    .header-logo h1{
+       font-size: 24px;
+       
+    }
+    .header-logo p{
+        font-size: 16px;
+    }
+    .main-container{
+        width: 100%;
+        flex-wrap: wrap;
+       
+    }
+    .main-texto {
+       max-width: 319px;
+    }
+    .main-texto h2{
+        font-size: 20px;
+    }
+    .main-texto p{
+        font-size: 16px;
+    }
+    .produtos-items{
+        width: 319px;
+    }
+}
+@media (min-width:768px) and (max-width: 100px){
+    .header-container{
+        width: 768px;
+        height: 400px;
+        background-image: url("/assets/img/image-michael-jordan-tablet.png"); 
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color:#fff;
+        padding: 0;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .header-logo{
+        max-width: 557px;
+       margin:99px 32px;
+    }   
+}
