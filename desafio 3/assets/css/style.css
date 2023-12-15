@@ -7,21 +7,24 @@ body{
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }
-.header-container{
+a {
+    text-decoration: none;
+}
+header{
     width:100%;
+}
+.header-container{
+    max-width: 1920px;
     height: 560px;
     background-color:#F8F8FF;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    top:0;
 }
 .header-artigo{
     max-width: 581px;
     margin-right: 253px;
     text-align: left;
-   
 }
 .header-artigo h2, .header-artigo p, .header-artigo .button{
     padding: 32px 0;
@@ -45,184 +48,102 @@ body{
     font-size: 18px;
 }
 .header-img{
-    width: 400px;
+    max-width: 581px;
     height: 460px;
 }
-.main-container{
-    max-width:1920px;
-    height: 1073px;
-    padding: 80px;
+main{
+    width: 100%;
+    height: 1070px;
+    
     display: flex;
-    position: relative;
-    top:60px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-   
- 
-}
-.container-titulo{
-    font-size: 32px;
-    padding: 0 0 113px 180px;
-}
-.artigos-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 113px;
+    flex-direction:column;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    top:560px;
+}
+.main-container{
+    width: 1216px;
+    height: 913px;
+    display: flex;
+    gap:113px;
+    flex-direction:column;
+    
+    
+}
+.artigos-container{
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    
 }
 .artigos-itens{
-    width: 384px;
+    max-width: 364px;
     height: 357px;
-    border: 2px solid #EEEEFF;
-    border-radius: 8px;
+    border: 1px solid #EEEEFF;
+    border-radius: 4px;
+    margin: 0 32px 48px 0;
 }
-.artigos-itens figure img {
-   
-    border-bottom: 2px;
+.artigos-img img{
+    width: 363px;
+    border-radius:2px ;
 }
 .artigos-itens-texto{
-    padding: 24px 32px;
+    padding: 32px 24px 12px 24px;
+    color: #121214
+    
 }
 .artigos-itens-texto a{
-    text-decoration: none;
-    font-size: 20px;
     font-weight: 600;
+    font-size: 20px;
     color: #121214;
 }
-.artigos-itens-texto  p{
-    font-size:18px;
+.artigos-itens-texto p {
     padding-top: 12px;
 }
 .contato{
-    width:100%;
-    height: auto;
+    width: 100%;
     background-color: #F8F8FF;
-    margin-top: 80px;  
+    height: 649px;
+    position: relative;
+    top: 1070px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-} 
-.contato-container{
-
-   padding: 80px;
-   
+    padding: 80px;
 }
-.contato-container h2{
-    font-size: 30px;
-    font-weight: 800;
-    color: #121214;
+.contato-container form{
+    
+    display: flex;
+    flex-direction: column;
 }
-form, input, textarea{
+form input, textarea{
     width: 592px;
+    height: 59px;
     color: #7C7C8A;
     border-radius: 4px;
     margin: 24px;
-    padding: 19px 24px;
-}
-input[type="text"], input[type="email"]{
-
-    height: 59px;
+    padding: 19px 24px; 
     border: 1px solid #EAEAEA;
-    
-    
 }
 
 #assunto{
-
     height: 150px;
-    border: 1px solid #EAEAEA;
-    
-
 }
 #btn{
     padding:14px;
-    background-color: #846AFF;
+    background-color: #846af8;
     color:#fff;
     text-align: center; 
     font-size: 18px;
     font-weight: 700;
     border: none;  
     cursor: pointer;
-}
-
-@media (min-width: 375px) and (max-width: 767px){
-    .header-container{
-        width: 100%;
-        height: auto;
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: center;
-        gap:24px;
-        
-        padding: 60px 24px;
-      
-
-    }
-    .header-artigo, .header-img {
-        max-width:327px;
-        padding: 0;
-        margin: 0;
-    }
-    .header-artigo h2{
-        font-size: 24px;
-
-    }
-    .header-artigo p{
-        font-size: 16px;
-    }
-    .header-img img{
-        width: 327px;
-    }
-    .main-container{
-        max-width:375px;
-        height: auto;
-        position: relative;
-        top:0;
-        padding: 0;
-        margin: 64px 24px;
-       
-    }
-    .container-titulo{
-        display: flex;
-        align-self: flex-start;
-        padding: 0;
-        margin: 0;
-      
-    }
-    .container-titulo h2{
-        font-size: 24px;
-      
-    }
-    .artigos-container{
-        padding-top: 64px;
-    }
-    .artigos-itens{
-        width: 327px;
-    }
-    .artigos-img img{
-        width: 327px;
-     
-    }
-    .artigos-itens-texto a{
-        font-size:18px ;
-    }
-    .artigos-itens-texto p{
-        font-size:18px ;
-    }
-     .contato{
-        width: 375px;
-        height: auto;
-       
-        position: relative;
-        bottom:0;
-        margin: 0;
-    }
-    input, textarea{
-        width:327px;
-    }
 }
