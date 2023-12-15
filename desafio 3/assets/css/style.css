@@ -14,10 +14,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    top:0;
 }
 .header-artigo{
+    max-width: 581px;
     margin-right: 253px;
     text-align: left;
+   
 }
 .header-artigo h2, .header-artigo p, .header-artigo .button{
     padding: 32px 0;
@@ -46,8 +50,11 @@ body{
 }
 .main-container{
     max-width:1920px;
+    height: 1073px;
     padding: 80px;
     display: flex;
+    position: relative;
+    top:60px;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -73,7 +80,7 @@ body{
     border-radius: 8px;
 }
 .artigos-itens figure img {
-    width: 383px;
+   
     border-bottom: 2px;
 }
 .artigos-itens-texto{
@@ -88,4 +95,134 @@ body{
 .artigos-itens-texto  p{
     font-size:18px;
     padding-top: 12px;
+}
+.contato{
+    width:100%;
+    height: auto;
+    background-color: #F8F8FF;
+    margin-top: 80px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} 
+.contato-container{
+
+   padding: 80px;
+   
+}
+.contato-container h2{
+    font-size: 30px;
+    font-weight: 800;
+    color: #121214;
+}
+form, input, textarea{
+    width: 592px;
+    color: #7C7C8A;
+    border-radius: 4px;
+    margin: 24px;
+    padding: 19px 24px;
+}
+input[type="text"], input[type="email"]{
+
+    height: 59px;
+    border: 1px solid #EAEAEA;
+    
+    
+}
+
+#assunto{
+
+    height: 150px;
+    border: 1px solid #EAEAEA;
+    
+
+}
+#btn{
+    padding:14px;
+    background-color: #846AFF;
+    color:#fff;
+    text-align: center; 
+    font-size: 18px;
+    font-weight: 700;
+    border: none;  
+    cursor: pointer;
+}
+
+@media (min-width: 375px) and (max-width: 767px){
+    .header-container{
+        width: 100%;
+        height: auto;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap:24px;
+        
+        padding: 60px 24px;
+      
+
+    }
+    .header-artigo, .header-img {
+        max-width:327px;
+        padding: 0;
+        margin: 0;
+    }
+    .header-artigo h2{
+        font-size: 24px;
+
+    }
+    .header-artigo p{
+        font-size: 16px;
+    }
+    .header-img img{
+        width: 327px;
+    }
+    .main-container{
+        max-width:375px;
+        height: auto;
+        position: relative;
+        top:0;
+        padding: 0;
+        margin: 64px 24px;
+       
+    }
+    .container-titulo{
+        display: flex;
+        align-self: flex-start;
+        padding: 0;
+        margin: 0;
+      
+    }
+    .container-titulo h2{
+        font-size: 24px;
+      
+    }
+    .artigos-container{
+        padding-top: 64px;
+    }
+    .artigos-itens{
+        width: 327px;
+    }
+    .artigos-img img{
+        width: 327px;
+     
+    }
+    .artigos-itens-texto a{
+        font-size:18px ;
+    }
+    .artigos-itens-texto p{
+        font-size:18px ;
+    }
+     .contato{
+        width: 375px;
+        height: auto;
+       
+        position: relative;
+        bottom:0;
+        margin: 0;
+    }
+    input, textarea{
+        width:327px;
+    }
 }
