@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Desafio 4</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-container">
+                <figure class="header-logo">
+                    <img src="/assets/img/Logo.svg" alt="Logo da login">
+                </figure>
+            </div>
+        </header>
+        <main>
+            <div class="main-container">
+                <section class="login">
+                    <div class="welcome">
+                        <p>Bem-vindo de volta</p>
+                        <h2>Faça login na sua conta</h2>
+                    </div>
+                    <form  action="#">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email"  placeholder="exemplo@gmail.com" />
+                        <label for="password">Senha</label>
+                        <input type="password" name="password" id="password" placeholder="0123456789" />
+    
+                       <div class="form-remember">
+                        <div>
+                            <input type="radio" name="remember-password" id="remember-password"/>
+                            <label for="remember-password">Lembrar de mim</label>
+                        </div>
+                        <p class="forgot-password"><a href="#">Esqueceu a senha? </a></p>
+                       </div>
+
+                        <div class="buttons">
+                            <button type="submit" class="btn button-login">Entrar na conta</button>
+                            <button type="submit" class="btn button-google">
+                                <img src="/assets/img/icon-google.svg" alt="">
+                                Ou faça login com o Google 
+                            </button>
+                        </div>
+                        
+                       <div class="sing-up">
+                            <p>Não tem conta? <span class="sing-up"><a href="#">Cadastre-se</a></span></p>
+                       </div>
+                    </form>
+                    
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
