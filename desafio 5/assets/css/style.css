@@ -165,3 +165,63 @@ main{
     }
 }
 
+@media (min-width: 300px) and (max-width: 764px){
+    .header-container{
+        justify-content: center;
+        align-items: center;
+    }
+    .header-nav{
+        display: none
+    }
+  
+    .main-container{
+      
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 100px;
+
+    }
+   
+    .main-information{
+        flex-direction: column-reverse;
+        width: 375px;
+        justify-content: center;
+        padding: 0 24px ;
+    }
+    .chihiro{
+        width: 100%;
+        padding-bottom: 40px;
+      justify-content: center;
+      align-items: left;
+     
+
+    }
+    
+    .author, .description{
+       font-size: 16px;
+       padding-bottom: 16px;
+    }
+    .movie{
+        width: 270px;
+        font-size:40px;
+        padding-bottom: 16px;
+    }
+    .buttons{
+        flex-direction: column;
+        width: 100%; 
+        
+      
+    }
+    .buttons a{
+        margin-bottom: 32px;
+    }
+    .main-img{
+        width: 100%;
+        text-align: center;
+    }
+    .main-img .ilustration{
+        width: 350px;
+        height: 185;
+   }
+   
+}
