@@ -1,0 +1,259 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Archivo', sans-serif;
+    background-image: url('/assets/img/background.svg');
+}
+header{
+    width: 100%;
+    height: 176px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.header-container{
+    width: 1216px;
+    
+    display: flex;
+   
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.header-nav, .social-media{
+    max-width: 322px;
+
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.social-media li {
+    list-style: none;
+    padding-right: 24px;
+    transition: 0.5s;
+}
+
+.social-media img:hover{
+    opacity: 0.5;
+}
+main{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    top: 95px;
+    
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main-container{
+    width: 1216px;
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    justify-content: space-between;
+}
+   
+
+.main-information{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chihiro{
+    width: 502px;
+    height: 415px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+.author{
+    font-family: 'Open Sans', sans-serif;
+   font-size: 20px; 
+  
+   font-weight: 700;
+}
+.movie{
+    font-family: 'Andada Pro', sans-serif;
+    font-size: 64px;
+    font-weight: 800;
+}
+.description{
+   
+    font-size: 24px;
+    font-weight: 500;
+}
+.buttons {
+    margin-top: 48px;
+   width: 502px; 
+   height: 52px;
+   display: flex;
+   
+}
+.buttons a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+
+    padding: 14px 32px;
+   
+    margin-right: 8px;
+
+    border: 2px solid #F1A5B1;
+    border-radius: 4px;
+    color: #ffff;
+    transition: 0.5s;
+
+}
+.buttons .watching-now{
+    background-color: #F1A5B1;
+    color: #0B0A0A;
+    border: none;
+
+}
+.watching-now::before{
+    content: url(../img/Play.svg); 
+    font-size: 16px;
+    position: relative;
+    top: 3px;
+    right: 10px;
+   
+}
+.watching-now:hover{
+    background-color: #f1a5b0da;
+}
+.main-img{
+    width: 574px;
+    height: 423px;
+    text-align: right;
+}
+.main-img  .ilustration{
+    width: 570px;
+    height: 523px;
+   
+
+}
+.effects:hover{
+    opacity: 0.6;
+}
+.ilustration{
+    animation: float 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes float{
+    0%{
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@media (min-width: 300px) and (max-width: 764px){
+    .header-container{
+        justify-content: center;
+        align-items: center;
+    }
+    .header-nav{
+        display: none
+    }
+  
+    .main-container{
+      
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 100px;
+
+    }
+   
+    .main-information{
+        flex-direction: column-reverse;
+        width: 375px;
+        justify-content: center;
+        padding: 0 24px ;
+    }
+    .chihiro{
+        width: 100%;
+        padding-bottom: 40px;
+      justify-content: center;
+      align-items: left;
+     
+
+    }
+    
+    .author, .description{
+       font-size: 16px;
+       padding-bottom: 16px;
+    }
+    .movie{
+        width: 270px;
+        font-size:40px;
+        padding-bottom: 16px;
+    }
+    .buttons{
+        flex-direction: column;
+        width: 100%; 
+        
+      
+    }
+    .buttons a{
+        margin-bottom: 32px;
+    }
+    .main-img{
+        width: 100%;
+        text-align: center;
+    }
+    .main-img .ilustration{
+        width: 350px;
+        height: 185;
+   }
+   
+}
+@media (min-width: 765px) and (max-width: 1020px){
+    .header-container{
+        padding-left: 32px;
+    }
+    .main-container{
+        justify-content: center;
+        align-items: center;
+    }
+   
+    .main-information{
+        flex-direction: column-reverse;
+        
+    }
+    .author, .description{
+        font-size: 16px;
+        padding-bottom: 16px;
+     }
+     .movie{
+        width: 270px;
+        font-size:40px;
+        padding-bottom: 16px;
+     }
+     .buttons{
+        flex-direction: column;
+       width: 100%; 
+       
+     }
+     .buttons a{
+        margin-bottom: 32px;
+     }
+   
+}
